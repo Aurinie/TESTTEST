@@ -52,3 +52,10 @@ function cambiarTextoEnlace() {
       } 
   } 
 }
+
+
+// Dark Mode
+const switchElement = document.querySelector(".switch");
+switchElement.addEventListener("click", e => {
+  switchElement.classList.toggle("active");
+});

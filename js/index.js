@@ -25,10 +25,9 @@ window.onload = function() {
     }
 };
 
-//Dark Mode
-const swith = document. querySelector ("-switch"):
-swith.addEventListener ("click", e => E
-swith.classList.toggle("active"):
-
-})
+// Dark Mode
+const switchElement = document.querySelector(".switch");
+switchElement.addEventListener("click", e => {
+  switchElement.classList.toggle("active");
+});
 
