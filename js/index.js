@@ -24,3 +24,11 @@ window.onload = function() {
         window.location.href = 'login.html';
     }
 };
+
+//Dark Mode
+const swith = document. querySelector ("-switch"):
+swith.addEventListener ("click", e => E
+swith.classList.toggle("active"):
+
+})
+

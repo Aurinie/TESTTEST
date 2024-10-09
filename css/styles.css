@@ -383,4 +383,15 @@ footer a:hover {
   -moz-box-sizing: border-box; /* para que el padding no afecte el tamaño*/
 }
 
-
+.switch {
+  width: 60px;
+  height: 30px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 100px;
+  border: rgb(39, 38, 38) solid 2px;
+  background-color: rgb(68, 68, 68);
+}
