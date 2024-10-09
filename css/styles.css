@@ -383,6 +383,9 @@ footer a:hover {
   -moz-box-sizing: border-box; /* para que el padding no afecte el tamaño*/
 }
 
+/* modo oscuro */
+
+
 .switch {
   width: 60px; 
   height: 30px;  
@@ -406,16 +409,26 @@ footer a:hover {
 .circle {
   width: 25px;
   height: 25px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.906);
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 2px;
+  left: 5px; /* Posición inicial del círculo a la izquierda */
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  
 }
+
 .switch.active {
   background-color: black;
   color: white;
 }
 
+.switch.active .circle {
+  left: 30px; /* Posición final del círculo a la derecha cuando está activo */
+}
+
+body {
+  background-color: white !important; /* Color por defecto */
+  transition: background-color 0.3s ease;
+}

@@ -27,7 +27,26 @@ window.onload = function() {
 
 // Dark Mode
 const switchElement = document.querySelector(".switch");
-switchElement.addEventListener("click", e => {
+const bodyElement = document.querySelector("body");
+
+
+switchElement.addEventListener("click", () => {
+    switchElement.classList.toggle("active");
+  
+// Dark Mode
+const switchElement = document.querySelector(".switch");
+const bodyElement = document.querySelector("body");
+
+switchElement.addEventListener("click", () => {
   switchElement.classList.toggle("active");
+
+  // Forzar el cambio de fondo
+  if (switchElement.classList.contains("active")) {
+    bodyElement.style.backgroundColor = "black";
+    bodyElement.style.color = "white"; // Cambiar también el texto a blanco para visibilidad
+  } else {
+    bodyElement.style.backgroundColor = "white";
+    bodyElement.style.color = "black"; // Restaurar el color del texto
+  }
 });
 
