@@ -25,9 +25,4 @@ window.onload = function() {
     }
 };
 
-// Dark Mode
-const switchElement = document.querySelector(".switch");
-switchElement.addEventListener("click", e => {
-  switchElement.classList.toggle("active");
-});
 
