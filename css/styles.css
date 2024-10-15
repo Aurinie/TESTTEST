@@ -383,7 +383,9 @@ footer a:hover {
   -moz-box-sizing: border-box; /* para que el padding no afecte el tamaño*/
 }
 
-// Modo Oscuro
+/* Bloque del Modo Oscuro*/ 
+
+/*Cambios al boton*/
 #toggleDarkMode {
   border: none; /* Sin borde */
   background-color: transparent; /* Fondo transparente */
@@ -391,7 +393,7 @@ footer a:hover {
 }
 
 #toggleDarkMode i {
-  font-size: 1.5rem; /* Ajusta el tamaño del icono si es necesario */
+  font-size: 1.5rem; /* Ajusta el tamaño del icono */
   
 }
 
@@ -403,7 +405,7 @@ color: #ccc;
 color: yellow;
 }
 
-
+/* Cambios en la screen*/
 body.dark-mode {
   background-color: #121212; /* Fondo oscuro */
   color: #ffffff; /* Texto blanco */
